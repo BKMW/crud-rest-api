@@ -34,7 +34,15 @@ private String expertise;
 @Temporal(TemporalType.TIMESTAMP)
 @LastModifiedDate
 private Date createdAt;
-
+ public Employee() {
+	// TODO Auto-generated constructor stub
+}
+public Employee(Long Id, String name, String designation, String expertise) {
+	this.Id=Id;
+	this.name = name;
+	this.designation = designation;
+	this.expertise = expertise;
+}
 
 public Long getId() {
 	return Id;
